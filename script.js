@@ -6,7 +6,14 @@ button.addEventListener('click', function () {
     let input = document.getElementById('carta-texto');
     let arrayFrase = input.value.split(" ");
 
-    p.innerText = ""
+    
+    if(input.value.trim() === "") {
+        p.innerText = 'por favor, digite o conteúdo da carta.'
+    } else {
+        p.innerText = ""
+    };
+
+
 
     for (i = 0; i < arrayFrase.length; i += 1) {
         let span = document.createElement('span');
@@ -17,5 +24,5 @@ button.addEventListener('click', function () {
 
 
 
-    console.log(arrayFrase)
+    console.log(typeof(input.value))
 })
