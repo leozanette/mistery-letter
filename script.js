@@ -19,7 +19,7 @@ button.addEventListener('click', function () {
 
 
 
-    for (i = 0; i < arrayFrase.length; i += 1) {
+    for (let i = 0; i < arrayFrase.length; i += 1) {
         let span = document.createElement('span');
         span.innerText = arrayFrase[i] + '';
         span.classList.add(estilo[Math.floor(Math.random()*3)]);
@@ -30,7 +30,15 @@ button.addEventListener('click', function () {
         console.log(arrayFrase[i]);
     }
 
-
-
-    console.log(typeof(input.value))
+    const letter = document.getElementById("carta-gerada")
+    
+    letter.addEventListener("click", function(event) {
+        if(event.target.id !== "carta-gerada") {
+            event.target.removeAttribute('class');
+            event.target.classList.add(estilo[Math.floor(Math.random()*3)]);
+            event.target.classList.add(tamanho[Math.floor(Math.random()*3)])
+            event.target.classList.add(rotate[Math.floor(Math.random()*2)])
+            event.target.classList.add(skew[Math.floor(Math.random()*2)])
+        }
+    })
 })
