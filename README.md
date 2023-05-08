@@ -1,6 +1,6 @@
 # Mistery Letter
 
-Este projeto foi desenvolvido como parte do Módulo de Fundamentos do curso de Desenvolvimento Web Full Stack da Trybe. O objetivo deste projeto é criar uma carta misteriosa a partir de uma string inserida pelo usuário e uma mensagem aleatória gerada pelo programa.
+Este projeto foi desenvolvido como parte do Módulo de Fundamentos do curso de Desenvolvimento Web da Trybe. O objetivo deste projeto é criar uma carta misteriosa a partir de uma string inserida pelo usuário.
 
 Para visualizar o projeto em ação, acesse o [link do GitHub Pages](https://leozanette.github.io/mistery-letter/). O código-fonte do projeto está disponível neste [repositório do GitHub](https://github.com/leozanette/mistery-letter).
 
